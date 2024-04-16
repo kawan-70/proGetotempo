@@ -1,41 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PROGETOTEMPO.MainPage">
+             x:Class="PROGETOTEMPO.MainPage" 
+             Shell.NavBarIsVisible="false">
+<Grid>
+           <Grid.RowDefinitions>
+             <RowDefinition Height="30"/>
+             <RowDefinition Height="*"/>
+             <RowDefinition Height="50"/>          
+           </Grid.RowDefinitions>
+           <Grid.ColumnDefinitions>
+             <ColumnDefinition Width="*"/>
+             <ColumnDefinition Width="*"/>
+             <ColumnDefinition Width="*"/>
+             <ColumnDefinition Width="*"/>
+           </Grid.ColumnDefinitions>
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+            <Image Source="clima.png"
+                   Aspect="AspectFill"
+                   Grid.RowSpan="3"
+                   Grid.ColumnSpan="4"/>
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+            <Frame  
+                    Padding="8"
+                    BackgroundColor="#55ffff"
+                    CornerRadius="30"
+                    Grid.Row="1"
+                    Grid.Column="3"
+                    Margin="10,20"
+                    HeightRequest="170"
+                    Grid.ColumnSpan="4"
+                    VerticalOptions="Start">
+            <Grid>
+                <Grid.RowDefinitions>
+                     <RowDefinition Height="30"/>
+                     <RowDefinition Height="*"/>
+                     <RowDefinition Height="50"/>          
+                </Grid.RowDefinitions>
+               
+          
+        <Label x:name="temp"
+               FontSize="50"
+               Grid.Row="0"
+               Text="nublado"/>
 
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
 
-        </VerticalStackLayout>
-    </ScrollView>
 
+
+
+
+
+            </Grid>
+            </Frame>
+
+
+</Grid>
 </ContentPage>
