@@ -5,12 +5,11 @@
              Shell.NavBarIsVisible="false">
 <Grid>
            <Grid.RowDefinitions>
-             <RowDefinition Height="30"/>
              <RowDefinition Height="*"/>
-             <RowDefinition Height="50"/>          
+             <RowDefinition Height="*"/>
+             <RowDefinition Height="*"/>          
            </Grid.RowDefinitions>
            <Grid.ColumnDefinitions>
-             <ColumnDefinition Width="*"/>
              <ColumnDefinition Width="*"/>
              <ColumnDefinition Width="*"/>
              <ColumnDefinition Width="*"/>
@@ -22,28 +21,175 @@
                    Grid.RowSpan="3"
                    Grid.ColumnSpan="4"/>
 
-            <Frame  
+<Frame  
+                    Padding="8"
+                    BackgroundColor="#55dde3ed"
+                    CornerRadius="30"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Margin="10,20"
+                    HeightRequest="170"
+                    VerticalOptions="Start">
+<Grid>
+                <Grid.RowDefinitions>
+                     <RowDefinition Height="*"/>
+                     <RowDefinition Height="*"/>
+                     <RowDefinition Height="*"/>          
+                </Grid.RowDefinitions>
+               
+          
+        <Label x:name=""
+               FontSize="25"
+               Text=""/>
+
+        <Label x:name=""
+               FontSize="25"
+               Text=""/>
+</Grid>
+</Frame>
+
+
+
+
+<Frame  
+                        Padding="8"
+                        BackgroundColor="#55ffff"
+                        CornerRadius="30"
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Margin="10,20"
+                        HeightRequest="170"
+                        VerticalOptions="Start">
+<Grid>
+                    <Grid.RowDefinitions>
+                         <RowDefinition Height="*"/>
+                         <RowDefinition Height="*"/>
+                         <RowDefinition Height="*"/>          
+                    </Grid.RowDefinitions>
+                   
+              
+            <Label x:name=""
+                   FontSize="25"
+                   Text=""/>
+
+            <Label x:name=""
+                   FontSize="25"
+                   Text=""/>
+</Grid>
+</Frame>
+
+<Frame  
+                        Padding="8"
+                        BackgroundColor="#55ffff"
+                        CornerRadius="30"
+                        Grid.Row="0"
+                        Grid.Column="2"
+                        Margin="10,20"
+                        HeightRequest="170"
+                        VerticalOptions="Start">
+<Grid>
+                    <Grid.RowDefinitions>
+                         <RowDefinition Height="*"/>
+                         <RowDefinition Height="*"/>
+                         <RowDefinition Height="*"/>          
+                    </Grid.RowDefinitions>
+                   
+              
+            <Label x:name=""
+                   FontSize="25"
+                   Text=""/>
+
+            <Label x:name=""
+                   FontSize="25"
+                   Text=""/>
+</Grid>
+</Frame>
+
+
+<Frame  
+                        Padding="8"
+                        BackgroundColor="#55ffff"
+                        CornerRadius="30"
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Margin="10,20"
+                        HeightRequest="170"
+                        VerticalOptions="Start">
+<Grid>
+                    <Grid.RowDefinitions>
+                         <RowDefinition Height="*"/>
+                         <RowDefinition Height="*"/>
+                         <RowDefinition Height="*"/>          
+                    </Grid.RowDefinitions>
+                   
+              
+            <Label x:name=""
+                   FontSize="25"
+                   Text=""/>
+
+            <Label x:name=""
+                   FontSize="25"
+                   Text=""/>
+</Grid>
+</Frame>
+
+
+<Frame  
                     Padding="8"
                     BackgroundColor="#55ffff"
                     CornerRadius="30"
                     Grid.Row="1"
-                    Grid.Column="3"
+                    Grid.Column="1"
                     Margin="10,20"
                     HeightRequest="170"
-                    Grid.ColumnSpan="4"
                     VerticalOptions="Start">
-            <Grid>
+<Grid>
                 <Grid.RowDefinitions>
-                     <RowDefinition Height="30"/>
                      <RowDefinition Height="*"/>
-                     <RowDefinition Height="50"/>          
+                     <RowDefinition Height="*"/>
+                     <RowDefinition Height="*"/>          
                 </Grid.RowDefinitions>
                
           
-        <Label x:name="temp"
-               FontSize="50"
-               Grid.Row="0"
-               Text="nublado"/>
+        <Label x:name=""
+               FontSize="25"
+               Text=""/>
+
+        <Label x:name=""
+               FontSize="25"
+               Text=""/>
+</Grid>
+</Frame>
+
+
+
+
+<Frame  
+                        Padding="8"
+                        BackgroundColor="#55ffff"
+                        CornerRadius="30"
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        Margin="10,20"
+                        HeightRequest="170"
+                        VerticalOptions="Start">
+<Grid>
+                    <Grid.RowDefinitions>
+                         <RowDefinition Height="*"/>
+                         <RowDefinition Height="*"/>
+                         <RowDefinition Height="*"/>          
+                    </Grid.RowDefinitions>
+                   
+              
+            <Label x:name=""
+                   FontSize="25"
+                   Text=""/>
+
+            <Label x:name=""
+                   FontSize="25"
+                   Text=""/>
+</Grid>
+</Frame>
 
 
 
@@ -52,8 +198,30 @@
 
 
 
-            </Grid>
-            </Frame>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </Grid>
