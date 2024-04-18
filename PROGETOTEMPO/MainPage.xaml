@@ -38,11 +38,11 @@
                 </Grid.RowDefinitions>
                
           
-        <Label x:name=""
+        <Label x:Name="labelTemp"
                FontSize="25"
                Text=""/>
 
-        <Label x:name=""
+        <Label x:Name="labelCity"
                FontSize="25"
                Text=""/>
 </Grid>

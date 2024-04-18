@@ -1,5 +1,5 @@
 namespace PROGETOTEMPO;
-public class  results
+public class Results
 {
 public  string city {get; set;}
 
