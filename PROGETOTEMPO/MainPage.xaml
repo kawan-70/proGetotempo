@@ -40,10 +40,10 @@
           
         <Label x:Name="labelTemp"
                FontSize="25"
-               Text=""/>
+               Text="e"/>
 
         <Label x:Name="labelCity"
-               FontSize="25"
+               FontSize="26"
                Text=""/>
 </Grid>
 </Frame>
