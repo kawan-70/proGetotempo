@@ -21,41 +21,41 @@ public partial class MainPage : ContentPage
 		resultado = new Results();
 		resultado.temp = 23;
 		resultado.description = "Tempo nublado";
-
+        
 
 
 
 	}
 
-	void PreencherPagina()
-	{
-	 				labelTemp.Text = resultado.temp.ToString();
+void PreencherPagina()
+{
+ 				labelTemp.Text = resultado.temp.ToString();
 
-	 				labeldescripition.Text = resultado.description();
+ 				labeldescripition.Text = resultado.description.ToString();
 
-	 				labelcity.Text = resultado.city.ToString();
+ 				labelcity.Text = resultado.city;
 
-	 				labelsunrise.Text = resultado.sunrise.ToString();
+ 				labelsunrise.Text = resultado.sunrise;
 
-	 				label.sunsetText = resultado.sunset.ToString();
+ 				labelsunset.Text = resultado.sunset;
 
-	 				labeltimizone.Text = resultado.timezone.ToString();
+ 				labeltimizone.Text = resultado.timezone;
 
-	 				labelmoon_phase.Text = resultado.moon_phase.ToString();
+ 				labelmoon_phase.Text = resultado.moon_phase;
 
-	 				labelcurrently.Text = resultado.currently.ToString();
+ 				labelcurrently.Text = resultado.currently;
 
-	 				labelwind_speedy.Text = resultado.Wind_speedy.ToString();
+ 				labelwind_speedy.Text = resultado.Wind_speedy;
 
-	 				labelclaudiness.Text = resultado.claudiness.ToString();
+ 				labelclaudiness.Text = resultado.claudiness;
 
-	 				labelcodition_code.Text = resultado.codition_code.ToString();
+ 				labelcodition_code.Text = resultado.codition_code;
 
-	 				labelImg_id.Text = resultado.Img_id.ToString();
+ 				labelImg_id.Text = resultado.Img_id;
 
-	 				labelphumidity.Text = resultado.humidity.ToString();
+ 				labelhumidity.Text = resultado.humidity.ToString();
 
 
-	}
+}
 }
 

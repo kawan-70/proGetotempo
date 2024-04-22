@@ -40,7 +40,7 @@
           
         <Label x:Name="labelTemp"
                FontSize="25"
-               Text="e"/>
+               Text=""/>
 
         <Label x:Name="labelCity"
                FontSize="26"
@@ -68,11 +68,11 @@
                     </Grid.RowDefinitions>
                    
               
-            <Label x:name=""
+            <Label x:name="labeldescripition"
                    FontSize="25"
                    Text=""/>
 
-            <Label x:name=""
+            <Label x:name="labelsunrise"
                    FontSize="25"
                    Text=""/>
 </Grid>
@@ -95,11 +95,11 @@
                     </Grid.RowDefinitions>
                    
               
-            <Label x:name=""
+            <Label x:name="labelsunset"
                    FontSize="25"
                    Text=""/>
 
-            <Label x:name=""
+            <Label x:name="labeltimizone"
                    FontSize="25"
                    Text=""/>
 </Grid>
@@ -123,11 +123,11 @@
                     </Grid.RowDefinitions>
                    
               
-            <Label x:name=""
+            <Label x:name="labelmoon_phase"
                    FontSize="25"
                    Text=""/>
 
-            <Label x:name=""
+            <Label x:name="labelcurrently"
                    FontSize="25"
                    Text=""/>
 </Grid>
@@ -151,11 +151,11 @@
                 </Grid.RowDefinitions>
                
           
-        <Label x:name=""
+        <Label x:name="labelwind_speedy"
                FontSize="25"
                Text=""/>
 
-        <Label x:name=""
+        <Label x:name="labelclaudiness"
                FontSize="25"
                Text=""/>
 </Grid>
@@ -181,13 +181,20 @@
                     </Grid.RowDefinitions>
                    
               
-            <Label x:name=""
+            <Label x:name="labelcodition_code"
                    FontSize="25"
                    Text=""/>
 
-            <Label x:name=""
+            <Label x:name="labelImg_id.Text"
                    FontSize="25"
                    Text=""/>
+           
+            <Label x:name="labelphumidity"
+                  FontSize="25"
+                  Text=""/>
+           
+
+
 </Grid>
 </Frame>
 
