@@ -8,26 +8,39 @@ namespace PROGETOTEMPO;
 public partial class MainPage : ContentPage
 {
 	Results resultado;
-
+ 
+ const string url="HTTPS://Api.HGBrasil.com/weather?woeid=4555927&Key=53a64d66";
 	public MainPage()
 	{
 		InitializeComponent();
-		TestaLayout();
-		PreencherPagina();
+		AtualizaTempo();
 	}
+async void AtualizaTempo()
 
-	void TestaLayout()
-	{
-		resultado = new Results();
-		resultado.temp = 23;
-		resultado.description = "Tempo nublado";
-        
+{
+
+try
+
+  {
+  
+    var navegador = new HttpClient();
+    var response = await navegador.GetAsync(url);
+    if (response. IsSuccessStatusCode)
+    {
+    var content = await response.Content.ReadAsStringAsync();
+    resposta = JsonSerializer.Deserialize<Resposta>(content);
+    }
+    
+    PreencherTela();
+  }
+  catch (Exception e)
+  {
+
+}
+}
 
 
-
-	}
-
-void PreencherPagina()
+void PreencherTela()
 {
  				labelTemp.Text = resultado.temp.ToString();
 
