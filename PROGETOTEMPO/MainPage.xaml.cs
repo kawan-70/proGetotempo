@@ -1,18 +1,20 @@
 ﻿using System.Reflection.Emit;
 using System.Resources;
 using System.Runtime.Versioning;
+using System.Text.Json;
 using Microsoft.Maui.Controls;
 
 namespace PROGETOTEMPO;
 
 public partial class MainPage : ContentPage
 {
-	Results resultado;
+	Resposta resposta;
  
  const string url="HTTPS://Api.HGBrasil.com/weather?woeid=4555927&Key=53a64d66";
 	public MainPage()
 	{
 		InitializeComponent();
+
 		AtualizaTempo();
 	}
 async void AtualizaTempo()
@@ -36,37 +38,41 @@ try
   catch (Exception e)
   {
 
-}
+  }
 }
 
 
 void PreencherTela()
 {
- 				labelTemp.Text = resultado.temp.ToString();
+ 				labeltemp.Text = resposta.results.temp.ToString();
 
- 				labeldescripition.Text = resultado.description.ToString();
+ 	 			labeldescripition.Text = resposta.results.description.ToString();
 
- 				labelcity.Text = resultado.city;
+ 				labelcity.Text = resposta.results.city;
 
- 				labelsunrise.Text = resultado.sunrise;
+ 				labelsunrise.Text = resposta.results.sunrise;
 
- 				labelsunset.Text = resultado.sunset;
+ 				labelsunset.Text = resposta.results.sunset;
 
- 				labeltimizone.Text = resultado.timezone;
+ 				labeltimizone.Text = resposta.results.timezone;
 
- 				labelmoon_phase.Text = resultado.moon_phase;
+ 				labelmoon_phase.Text = resposta.results.moon_phase;
 
- 				labelcurrently.Text = resultado.currently;
+ 				labelcurrently.Text = resposta.results.currently;
 
- 				labelwind_speedy.Text = resultado.Wind_speedy;
+ 				labelWind_speedy.Text =resposta.results.Wind_speedy;
 
- 				labelclaudiness.Text = resultado.claudiness;
+ 				labelclaudiness.Text = resposta.results.claudiness;
 
- 				labelcodition_code.Text = resultado.codition_code;
+ 				labelcodition_code.Text = resposta.results.codition_code;
 
- 				labelImg_id.Text = resultado.Img_id;
+ 				labelImg_id.Text = resposta.results.Img_id;
 
- 				labelhumidity.Text = resultado.humidity.ToString();
+ 				labelhumidity.Text = resposta.results.humidity.ToString();
+
+
+		
+
 
 
 }

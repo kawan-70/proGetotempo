@@ -4,199 +4,194 @@
              x:Class="PROGETOTEMPO.MainPage" 
              Shell.NavBarIsVisible="false">
 <Grid>
-           <Grid.RowDefinitions>
-             <RowDefinition Height="*"/>
-             <RowDefinition Height="*"/>
-             <RowDefinition Height="*"/>          
-           </Grid.RowDefinitions>
-           <Grid.ColumnDefinitions>
-             <ColumnDefinition Width="*"/>
-             <ColumnDefinition Width="*"/>
-             <ColumnDefinition Width="*"/>
-           </Grid.ColumnDefinitions>
+       <Grid.RowDefinitions>
+              <RowDefinition Height="*"/>
+              <RowDefinition Height="*"/>
+              <RowDefinition Height="*"/>          
+       </Grid.RowDefinitions>
+       <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+       </Grid.ColumnDefinitions>
 
 
-            <Image Source="clima.png"
-                   Aspect="AspectFill"
-                   Grid.RowSpan="3"
-                   Grid.ColumnSpan="4"/>
+       <Image Source="clima.png"
+              Aspect="AspectFill"
+              Grid.RowSpan="3"
+              Grid.ColumnSpan="4"/>
 
-<Frame  
-                    Padding="8"
-                    BackgroundColor="#55dde3ed"
-                    CornerRadius="30"
-                    Grid.Row="0"
-                    Grid.Column="0"
-                    Margin="10,20"
-                    HeightRequest="170"
-                    VerticalOptions="Start">
-<Grid>
-                <Grid.RowDefinitions>
-                     <RowDefinition Height="*"/>
-                     <RowDefinition Height="*"/>
-                     <RowDefinition Height="*"/>          
-                </Grid.RowDefinitions>
+       <Frame  
+              Padding="8"
+              BackgroundColor="#55dde3ed"
+              CornerRadius="30"
+              Grid.Row="0"
+              Grid.Column="0"
+              Margin="10,20"
+              HeightRequest="170"
+              VerticalOptions="Start">
+              <Grid>
+                     <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>          
+                     </Grid.RowDefinitions>
                
           
-        <Label x:Name="labelTemp"
-               FontSize="25"
-               Text=""/>
+                     <Label x:Name="labeltemp"
+                            FontSize="25"
+                            Text=""/>
 
-        <Label x:Name="labelCity"
-               FontSize="26"
-               Text=""/>
-</Grid>
-</Frame>
-
-
+                     <Label x:Name="labelcity"
+                            FontSize="26"
+                            Text=""/>
+              </Grid>
+       </Frame>
 
 
-<Frame  
-                        Padding="8"
-                        BackgroundColor="#55ffff"
-                        CornerRadius="30"
-                        Grid.Row="0"
-                        Grid.Column="1"
-                        Margin="10,20"
-                        HeightRequest="170"
-                        VerticalOptions="Start">
-<Grid>
+
+
+       <Frame  
+              Padding="8"
+              BackgroundColor="#55ffff"
+              CornerRadius="30"
+              Grid.Row="0"
+              Grid.Column="1"
+              Margin="10,20"
+              HeightRequest="170"
+              VerticalOptions="Start">
+              <Grid>
                     <Grid.RowDefinitions>
                          <RowDefinition Height="*"/>
                          <RowDefinition Height="*"/>
-                         <RowDefinition Height="*"/>          
                     </Grid.RowDefinitions>
                    
               
-            <Label x:name="labeldescripition"
-                   FontSize="25"
-                   Text=""/>
+                     <Label x:name="labeldescripition"
+                            FontSize="25"
+                            Text=""/>
 
-            <Label x:name="labelsunrise"
-                   FontSize="25"
-                   Text=""/>
-</Grid>
-</Frame>
+                     <Label x:name="labelsunrise"
+                            FontSize="25"
+                            Text=""/>
+              </Grid>
+       </Frame>
 
-<Frame  
-                        Padding="8"
-                        BackgroundColor="#55ffff"
-                        CornerRadius="30"
-                        Grid.Row="0"
-                        Grid.Column="2"
-                        Margin="10,20"
-                        HeightRequest="170"
-                        VerticalOptions="Start">
-<Grid>
-                    <Grid.RowDefinitions>
-                         <RowDefinition Height="*"/>
-                         <RowDefinition Height="*"/>
-                         <RowDefinition Height="*"/>          
-                    </Grid.RowDefinitions>
+       <Frame  
+              Padding="8"
+              BackgroundColor="#55ffff"
+              CornerRadius="30"
+              Grid.Row="0"
+              Grid.Column="2"
+              Margin="10,20"
+              HeightRequest="170"
+              VerticalOptions="Start">
+              <Grid>
+                     <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                     </Grid.RowDefinitions>
                    
               
-            <Label x:name="labelsunset"
-                   FontSize="25"
-                   Text=""/>
+                     <Label x:Name="labelsunset"
+                            FontSize="25"
+                            Text=""/>
 
-            <Label x:name="labeltimizone"
-                   FontSize="25"
-                   Text=""/>
-</Grid>
-</Frame>
+                     <Label x:Name="labeltimizone"
+                            FontSize="25"
+                            Text=""/>
+              </Grid>
+       </Frame>
 
 
-<Frame  
-                        Padding="8"
-                        BackgroundColor="#55ffff"
-                        CornerRadius="30"
-                        Grid.Row="1"
-                        Grid.Column="0"
-                        Margin="10,20"
-                        HeightRequest="170"
-                        VerticalOptions="Start">
-<Grid>
-                    <Grid.RowDefinitions>
-                         <RowDefinition Height="*"/>
-                         <RowDefinition Height="*"/>
-                         <RowDefinition Height="*"/>          
-                    </Grid.RowDefinitions>
+       <Frame  
+              Padding="8"
+              BackgroundColor="#55ffff"
+              CornerRadius="30"
+              Grid.Row="1"
+              Grid.Column="0"
+              Margin="10,20"
+              HeightRequest="170"
+              VerticalOptions="Start">
+              <Grid>
+                     <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                     </Grid.RowDefinitions>
                    
               
-            <Label x:name="labelmoon_phase"
-                   FontSize="25"
-                   Text=""/>
+                     <Label x:Name="labelmoon_phase"
+                            FontSize="25"
+                            Text=""/>
 
-            <Label x:name="labelcurrently"
-                   FontSize="25"
-                   Text=""/>
-</Grid>
-</Frame>
+                     <Label x:Name="labelcurrently"
+                            FontSize="25"
+                            Text=""/>
+              </Grid>
+       </Frame>
 
 
-<Frame  
-                    Padding="8"
-                    BackgroundColor="#55ffff"
-                    CornerRadius="30"
-                    Grid.Row="1"
-                    Grid.Column="1"
-                    Margin="10,20"
-                    HeightRequest="170"
-                    VerticalOptions="Start">
-<Grid>
-                <Grid.RowDefinitions>
-                     <RowDefinition Height="*"/>
-                     <RowDefinition Height="*"/>
-                     <RowDefinition Height="*"/>          
-                </Grid.RowDefinitions>
+       <Frame  
+              Padding="8"
+              BackgroundColor="#55ffff"
+              CornerRadius="30"
+              Grid.Row="1"
+              Grid.Column="1"
+              Margin="10,20"
+              HeightRequest="170"  
+              VerticalOptions="Start">
+              <Grid>
+                     <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                     </Grid.RowDefinitions>
                
-          
-        <Label x:name="labelwind_speedy"
-               FontSize="25"
-               Text=""/>
+                     
+                     <Label x:Name="labelWind_speedy"
+                            FontSize="25"
+                            Text=""/>
 
-        <Label x:name="labelclaudiness"
-               FontSize="25"
-               Text=""/>
-</Grid>
-</Frame>
-
-
+                     <Label x:Name="labelclaudiness"
+                            FontSize="25"
+                            Text=""/>
+              </Grid>
+       </Frame>
 
 
-<Frame  
-                        Padding="8"
-                        BackgroundColor="#55ffff"
-                        CornerRadius="30"
-                        Grid.Row="1"
-                        Grid.Column="2"
-                        Margin="10,20"
-                        HeightRequest="170"
-                        VerticalOptions="Start">
-<Grid>
-                    <Grid.RowDefinitions>
-                         <RowDefinition Height="*"/>
-                         <RowDefinition Height="*"/>
-                         <RowDefinition Height="*"/>          
-                    </Grid.RowDefinitions>
+
+
+       <Frame  
+              Padding="8"
+              BackgroundColor="#55ffff"
+              CornerRadius="30"
+              Grid.Row="1"
+              Grid.Column="2"
+              Margin="10,20"
+              HeightRequest="170"
+              VerticalOptions="Start">
+              <Grid>
+                            <Grid.RowDefinitions>
+                                   <RowDefinition Height="*"/>
+                                   <RowDefinition Height="*"/>
+                                   <RowDefinition Height="*"/>          
+                            </Grid.RowDefinitions>
                    
               
-            <Label x:name="labelcodition_code"
-                   FontSize="25"
-                   Text=""/>
+                     <Label x:Name="labelcodition_code"
+                            FontSize="25"
+                            Text=""/>
 
-            <Label x:name="labelImg_id.Text"
-                   FontSize="25"
-                   Text=""/>
-           
-            <Label x:name="labelphumidity"
-                  FontSize="25"
-                  Text=""/>
+                     <Label x:Name="labelImg_id"
+                            FontSize="25"
+                            Text=""/>     
+                     
+                     <Label x:Name="labelhumidity"
+                            FontSize="25"
+                            Text=""/>
            
 
 
-</Grid>
-</Frame>
+              </Grid>
+       </Frame>
 
 
 
