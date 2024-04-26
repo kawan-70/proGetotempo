@@ -10,7 +10,7 @@ public partial class MainPage : ContentPage
 {
 	Resposta resposta;
  
- const string url="HTTPS://Api.HGBrasil.com/weather?woeid=4555927&Key=53a64d66";
+ const string url="https://api.hgbrasil.com/weather?woeid=455927&key=53a64d66";
 	public MainPage()
 	{
 		InitializeComponent();
@@ -37,7 +37,7 @@ try
   }
   catch (Exception e)
   {
-
+	System.Diagnostics.Debug.WriteLine(e);
   }
 }
 
@@ -46,7 +46,7 @@ void PreencherTela()
 {
  				labeltemp.Text = resposta.results.temp.ToString();
 
- 	 			labeldescripition.Text = resposta.results.description.ToString();
+ 	 			labeldescription.Text = resposta.results.description;
 
  				labelcity.Text = resposta.results.city;
 
@@ -62,13 +62,15 @@ void PreencherTela()
 
  				labelWind_speedy.Text =resposta.results.Wind_speedy;
 
- 				labelclaudiness.Text = resposta.results.claudiness;
+ 				labelcloudiness.Text = resposta.results.cloudiness.ToString();
 
  				labelcodition_code.Text = resposta.results.codition_code;
 
  				labelImg_id.Text = resposta.results.Img_id;
 
  				labelhumidity.Text = resposta.results.humidity.ToString();
+				
+				labelrain.Text = resposta.results.rain.ToString();
 
 
 		

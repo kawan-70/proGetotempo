@@ -21,10 +21,12 @@ public  string currently {get; set;}
 
 public  string Wind_speedy {get; set;}
 
-public  string claudiness {get; set;}
+public  int cloudiness {get; set;}
 
 public  string codition_code {get; set;}
 
 public  string description {get; set;}
+
+public  string rain {get; set;}
 
 }
