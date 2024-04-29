@@ -22,10 +22,10 @@
               Grid.RowSpan="3"
               Grid.ColumnSpan="4"/>
 
-       <Image Source="emot.gif"
+       <Image Source="batman.webp"
               Aspect="AspectFill"
-              Grid.Row="0"
-              Grid.Column="4"/>
+              Grid.RowSpan="3"
+              Grid.ColumnSpan="0"/>
 
 
        <Frame  
