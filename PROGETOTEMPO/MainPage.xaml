@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PROGETOTEMPO.MainPage" 
              Shell.NavBarIsVisible="false">
+
 <Grid>
        <Grid.RowDefinitions>
               <RowDefinition Height="*"/>
@@ -16,17 +17,23 @@
        </Grid.ColumnDefinitions>
 
 
-       <Image Source="clima.png"
+       <Image x:Name="labelImg_id"
               Aspect="AspectFill"
               Grid.RowSpan="3"
               Grid.ColumnSpan="4"/>
+
+       <Image Source="emot.gif"
+              Aspect="AspectFill"
+              Grid.Row="0"
+              Grid.Column="4"/>
+
 
        <Frame  
               Padding="8"
               BackgroundColor="#55dde3ed"
               CornerRadius="30"
-              Grid.Row="0"
-              Grid.Column="0"
+              Grid.Row="1"
+              Grid.Column="1"
               Margin="10,20"
               HeightRequest="170"
               VerticalOptions="Start">
@@ -35,17 +42,34 @@
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>          
                      </Grid.RowDefinitions>
-               
+                     <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                     </Grid.ColumnDefinitions>
           
-                     <Label x:Name="labeltemp"
-                            FontSize="25"
-                            Grid.Row="0"
-                            Text=""/>
+                  
 
                      <Label x:Name="labelcity"
                             FontSize="26"
-                            Grid.Row="1"
+                            Grid.Row="0"
+                            Grid.Column="1"
                             Text=""/>
+
+                            <Label Text="cidade"
+                                   Grid.Row="0"
+                                   FontSize="25"
+                                   Grid.Column="0"/>
+
+                     <Label x:Name="labelcurrently"
+                            FontSize="25"
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Text=""/>
+
+                            <Label Text="atualmente de:"
+                                   Grid.Row="1"
+                                   FontSize="25"
+                                   Grid.Column="0"/>
               </Grid>
        </Frame>
 
@@ -65,19 +89,50 @@
                     <Grid.RowDefinitions>
                          <RowDefinition Height="*"/>
                          <RowDefinition Height="*"/>
+                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                   
+                    <Grid.ColumnDefinitions>
+                           <ColumnDefinition Width="*"/>
+                           <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    
               
                      <Label x:Name="labeldescription"
-                            
                             FontSize="25"
                             Grid.Row="0"
+                            Grid.Column="1"
                             Text=""/>
 
-                     <Label x:Name="labelsunrise"
+                            <Label Text="decriçâo tempo"
+                                   Grid.Row="0"
+                                   FontSize="25"
+                                   Grid.Column="0"/>
+
+                     <Label x:Name="labelrain"
                             FontSize="25"
                             Grid.Row="1"
+                            Grid.Column="1"
                             Text=""/>
+
+                            <Label Text="chuva"
+                                   Grid.Row="1"
+                                   FontSize="25"
+                                   Grid.Column="0"/>
+
+                     <Label x:Name="labelWind_speedy"
+                            FontSize="25"
+                            Grid.Row="2"
+                            Grid.Column="1"
+                            Text=""/>
+
+                            <Label Text="velocidade do vento"
+                                   Grid.Row="2"
+                                   FontSize="25"
+                                   Grid.Column="0"/>
+
+
+
+                    
               </Grid>
        </Frame>
 
@@ -94,85 +149,50 @@
                      <Grid.RowDefinitions>
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
                      </Grid.RowDefinitions>
+                     <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                     </Grid.ColumnDefinitions>
                    
               
                      <Label x:Name="labelsunset"
                             FontSize="25"
-                             Grid.Row="0"
-                            Text=""/>
-
-                     <Label x:Name="labeltimizone"
-                            FontSize="25"
-                             Grid.Row="1"
-                            Text=""/>
-              </Grid>
-       </Frame>
-
-
-       <Frame  
-              Padding="8"
-              BackgroundColor="#55dde3ed"
-              CornerRadius="30"
-              Grid.Row="1"
-              Grid.Column="0"
-              Margin="10,20"
-              HeightRequest="170"
-              VerticalOptions="Start">
-              <Grid>
-                     <Grid.RowDefinitions>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
-                     </Grid.RowDefinitions>
-                   
-                    <Label x:Name="labelrain"
-                            FontSize="25"
                             Grid.Row="0"
+                            Grid.Column="1"
                             Text=""/>
-              
-                     <Label x:Name="labelmoon_phase"
-                            FontSize="25"
-                             Grid.Row="1"
-                            Text=""/>
+                            
+                            <Label Text="anoitecer"
+                                   Grid.Row="0"
+                                   FontSize="25"
+                                   Grid.Column="0"/>
 
-                     <Label x:Name="labelcurrently"
-                            FontSize="25"
-                             Grid.Row="2"
-                            Text=""/>
-              </Grid>
-       </Frame>
-
-
-       <Frame  
-              Padding="8"
-              BackgroundColor="#55dde3ed"
-              CornerRadius="30"
-              Grid.Row="1"
-              Grid.Column="1"
-              Margin="10,20"
-              HeightRequest="170"  
-              VerticalOptions="Start">
-              <Grid>
-                     <Grid.RowDefinitions>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
-                     </Grid.RowDefinitions>
-               
-                     
-                     <Label x:Name="labelWind_speedy"
-                            FontSize="25"
-                             Grid.Row="0"
-                            Text=""/>
-
-                     <Label x:Name="labelcloudiness"
+                     <Label x:Name="labelsunrise"
                             FontSize="25"
                             Grid.Row="1"
-                            TextColor="#eb4f34"/>
+                            Grid.Column="1"
+                            Text=""/>
+
+                            <Label Text="manhã"
+                                   Grid.Row="1"
+                                   FontSize="25"
+                                   Grid.Column="0"/>
+
+                     <Label x:Name="labelmoon_phase"
+                            FontSize="25"
+                            Grid.Row="2"
+                            Grid.Column="1"
+                            Text=""/>
+
+                            <Label Text="fase lunar:"
+                                   Grid.Row="2"
+                                   FontSize="25"
+                                   Grid.Column="0"/>
+
+                   
               </Grid>
        </Frame>
-
-
 
 
        <Frame  
@@ -190,59 +210,48 @@
                                    <RowDefinition Height="*"/>
                                    <RowDefinition Height="*"/>          
                             </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                   <ColumnDefinition Width="*"/>
+                                   <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
                    
               
-                     <Label x:Name="labelcodition_code"
-                            FontSize="25"
-                             Grid.Row="0"
-                            Text=""/>
-
-                     <Label x:Name="labelImg_id"
-                            FontSize="25"
-                             Grid.Row="1"
-                            Text=""/>     
-                     
+                   
                      <Label x:Name="labelhumidity"
                             FontSize="25"
-                             Grid.Row="2"
+                            Grid.Row="0"
+                            Grid.Column="1"
                             Text=""/>
-           
 
+                            <Label Text="humidade"
+                                   Grid.Row="0"
+                                   FontSize="25"
+                                   Grid.Column="0"/>
+           
+                     <Label x:Name="labelcloudiness"
+                            FontSize="25"
+                            Grid.Row="1"
+                            Grid.Column="1"/>
+
+                            <Label Text="nebulosidade"
+                                   Grid.Row="1"
+                                   FontSize="25"
+                                   Grid.Column="0"/>
+
+
+                        <Label x:Name="labeltemp"
+                            FontSize="25"
+                            Grid.Row="2"
+                            Grid.Column="1"
+                            Text=""/>
+
+                            <Label Text="temperatura"
+                                   Grid.Row="2"
+                                   FontSize="25"
+                                   Grid.Column="0"/>
 
               </Grid>
        </Frame>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </Grid>

@@ -25,12 +25,13 @@ try
 
   {
   
-    var navegador = new HttpClient();
-    var response = await navegador.GetAsync(url);
-    if (response. IsSuccessStatusCode)
+  			  var navegador = new HttpClient();
+  			  var response = await navegador.GetAsync(url);
+
+             if (response. IsSuccessStatusCode)
     {
-    var content = await response.Content.ReadAsStringAsync();
-    resposta = JsonSerializer.Deserialize<Resposta>(content);
+   			 var content = await response.Content.ReadAsStringAsync();
+   			 resposta = JsonSerializer.Deserialize<Resposta>(content);
     }
     
     PreencherTela();
@@ -54,26 +55,51 @@ void PreencherTela()
 
  				labelsunset.Text = resposta.results.sunset;
 
- 				labeltimizone.Text = resposta.results.timezone;
-
  				labelmoon_phase.Text = resposta.results.moon_phase;
 
  				labelcurrently.Text = resposta.results.currently;
 
- 				labelWind_speedy.Text =resposta.results.Wind_speedy;
+ 				labelWind_speedy.Text =resposta.results.wind_speedy;
 
  				labelcloudiness.Text = resposta.results.cloudiness.ToString();
 
- 				labelcodition_code.Text = resposta.results.codition_code;
+ 				//labelcodition_code.Text = resposta.results.codition_code;
 
- 				labelImg_id.Text = resposta.results.Img_id;
+ 				//labelImg_id.Text = resposta.results.Img_id;
 
  				labelhumidity.Text = resposta.results.humidity.ToString();
 				
 				labelrain.Text = resposta.results.rain.ToString();
 
 
-		
+		       if(resposta.results.moon_phase=="full")
+			labelmoon_phase.Text = "Cheia";
+		else if(resposta.results.moon_phase=="new")
+			labelmoon_phase.Text = "Nova";
+		else if(resposta.results.moon_phase=="growing")
+			labelmoon_phase.Text = "Crescente";
+		else if(resposta.results.moon_phase=="waning")
+			labelmoon_phase.Text = "minguante";
+
+
+		if(resposta.results.currently=="dia")
+		{
+			if(resposta.results.rain>=10)
+			labelImg_id.Source="diachuvoso.png";
+			else if(resposta.results.cloudiness>=10)
+			labelImg_id.Source="dianublado.png";
+			else
+			labelImg_id.Source="diaensolarado.png";
+		}
+		else
+		{
+			if(resposta.results.rain>=10)
+			 labelImg_id.Source="noitechuvuso.png";
+			 else if (resposta.results.cloudiness>=10)
+			 labelImg_id.Source="noitenublado.png";
+			 else
+			 labelImg_id.Source="noite.png";
+		}
 
 
 
