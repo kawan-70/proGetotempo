@@ -1,5 +1,7 @@
 namespace PROGETOTEMPO;
 public class Results
+
+//pawendrs
 {
 public  string city {get; set;}
 

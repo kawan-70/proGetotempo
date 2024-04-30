@@ -22,11 +22,10 @@
               Grid.RowSpan="3"
               Grid.ColumnSpan="4"/>
 
-       <Image Source="batman.webp"
+       <Image Source="picolos.gif"
               Aspect="AspectFill"
               Grid.RowSpan="3"
               Grid.ColumnSpan="0"/>
-
 
        <Frame  
               Padding="8"

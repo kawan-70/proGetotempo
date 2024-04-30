@@ -24,7 +24,7 @@ async void AtualizaTempo()
 try
 
   {
-  
+			//ele é um transformer ele pega e transforma o Json
   			  var navegador = new HttpClient();
   			  var response = await navegador.GetAsync(url);
 
@@ -36,6 +36,7 @@ try
     
     PreencherTela();
   }
+  //caso ocorra uma exeção ele nao deixar crachar;
   catch (Exception e)
   {
 	System.Diagnostics.Debug.WriteLine(e);
@@ -45,6 +46,8 @@ try
 
 void PreencherTela()
 {
+
+				//ele esta pegando o results e tranformando em uma variavel e verificar o que é uma string e o que nao é;
  				labeltemp.Text = resposta.results.temp.ToString();
 
  	 			labeldescription.Text = resposta.results.description;
@@ -71,7 +74,7 @@ void PreencherTela()
 				
 				labelrain.Text = resposta.results.rain.ToString();
 
-
+				//traduçao das fases da lua;
 		       if(resposta.results.moon_phase=="full")
 			labelmoon_phase.Text = "Cheia";
 		else if(resposta.results.moon_phase=="new")
@@ -81,7 +84,7 @@ void PreencherTela()
 		else if(resposta.results.moon_phase=="waning")
 			labelmoon_phase.Text = "minguante";
 
-
+		//troca a img;
 		if(resposta.results.currently=="dia")
 		{
 			if(resposta.results.rain>=10)
