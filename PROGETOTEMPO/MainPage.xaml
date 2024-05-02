@@ -27,6 +27,8 @@
               Grid.RowSpan="3"
               Grid.ColumnSpan="0"/>
 
+
+<!--cidade-->
        <Frame  
               Padding="8"
               BackgroundColor="#55dde3ed"
@@ -74,7 +76,7 @@
 
 
 
-
+<!--descrição-->
        <Frame  
               Padding="8"
               BackgroundColor="#55dde3ed"
@@ -134,7 +136,7 @@
                     
               </Grid>
        </Frame>
-
+<!--fases da lua-->
        <Frame  
               Padding="8"
               BackgroundColor="#55dde3ed"
@@ -194,6 +196,7 @@
        </Frame>
 
 
+<!--humidade-->
        <Frame  
               Padding="8"
               BackgroundColor="#55dde3ed"

@@ -7,18 +7,22 @@ using Microsoft.Maui.Controls;
 namespace PROGETOTEMPO;
 
 public partial class MainPage : ContentPage
+//_______________________________________________________________________________________________________________
 {
 	Resposta resposta;
- 
+   //info do server
  const string url="https://api.hgbrasil.com/weather?woeid=455927&key=53a64d66";
 	public MainPage()
 	{
 		InitializeComponent();
 
+		
+
 		AtualizaTempo();
 	}
-async void AtualizaTempo()
+//_______________________________________________________________________________________________________________
 
+async void AtualizaTempo()
 {
 
 try
@@ -43,6 +47,7 @@ try
   }
 }
 
+//_______________________________________________________________________________________________________________
 
 void PreencherTela()
 {
@@ -66,15 +71,14 @@ void PreencherTela()
 
  				labelcloudiness.Text = resposta.results.cloudiness.ToString();
 
- 				//labelcodition_code.Text = resposta.results.codition_code;
-
- 				//labelImg_id.Text = resposta.results.Img_id;
-
  				labelhumidity.Text = resposta.results.humidity.ToString();
 				
 				labelrain.Text = resposta.results.rain.ToString();
 
 				//traduçao das fases da lua;
+//________________________________________________________________________________________________________________
+
+
 		       if(resposta.results.moon_phase=="full")
 			labelmoon_phase.Text = "Cheia";
 		else if(resposta.results.moon_phase=="new")
@@ -83,8 +87,13 @@ void PreencherTela()
 			labelmoon_phase.Text = "Crescente";
 		else if(resposta.results.moon_phase=="waning")
 			labelmoon_phase.Text = "minguante";
+		else if(resposta.results.moon_phase=="last_quarter")
+			labelmoon_phase.Text = "Ultimo quarto";
+
+//________________________________________________________________________________________________________________
 
 		//troca a img;
+
 		if(resposta.results.currently=="dia")
 		{
 			if(resposta.results.rain>=10)
